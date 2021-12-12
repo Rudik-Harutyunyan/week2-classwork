@@ -1,3 +1,5 @@
+package week2;
+
 import java.util.Scanner;
 
 public class Task3 {
@@ -5,8 +7,8 @@ public class Task3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         float PI = 3.14159F;
-        double r = scanner.nextDouble();
         System.out.println("enter radius");
+        double r = scanner.nextDouble();
         double perimeter = 2*PI*r;
         double area = PI*r*r;
         System.out.println("perimeter = " + perimeter);

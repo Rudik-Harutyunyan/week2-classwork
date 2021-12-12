@@ -1,3 +1,5 @@
+package week2;
+
 import java.util.Scanner;
 
 /*7. Input from console int a and int b, if a and b corresponds for following requirements print “Both a and b legal”, if any of them does not correspond print about it like this “a is legal b is illegal ''. or vice versa
@@ -61,7 +63,25 @@ public class Task7 {
         }
     }
 
-        */
+
+
+        if ((a % 5 == 0) || (b % 5 == 0)) {
+            if (a % 5 != 0){
+                System.out.println("a is illegal b is legal");
+            }else if (b % 5 != 0){
+                System.out.println("a is legal b is illegal");
+            }else System.out.println("both a and b are legal");
+        }
+*/
+        if ((a % 5 != 0) || (b % 5 == 0)){
+            if (a % 5 == 0){
+                System.out.println("a is illegal b is legal");
+            }
+            else if (b % 5 != 0){
+                System.out.println("a is legal b is illegal");
+            }
+            else System.out.println("both a and b are legal");
+        }
 
 
     }
